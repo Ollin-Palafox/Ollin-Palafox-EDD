@@ -16,14 +16,14 @@ public class Sorting {
         Metrica MetricaQuickSort = new Metrica();
         int[] arrayQuickSort = arrayAleatorio.clone();
         QuickSort.quickSort(arrayQuickSort, MetricaQuickSort);
-        System.out.println("\0nComparaciones del Quick Sort: " + MetricaQuickSort.getComparacion());
+        System.out.println("\nComparaciones del Quick Sort: " + MetricaQuickSort.getComparacion());
         System.out.println("Movimientos totales del Quick Sort: " + MetricaQuickSort.getMovimientos());
 
         Metrica MetricaHeapSort = new Metrica();
         int[] arrayHeapSort = arrayAleatorio.clone();
         HeapSort.heapSort(arrayHeapSort, MetricaHeapSort);
-        System.out.println("\nComparaciones del Merge Sort: " + MetricaHeapSort.getComparacion());
-        System.out.println("Movimientos totales del Merge Sort: " + MetricaHeapSort.getMovimientos());
+        System.out.println("\nComparaciones del Heap Sort: " + MetricaHeapSort.getComparacion());
+        System.out.println("Movimientos totales del Heap Sort: " + MetricaHeapSort.getMovimientos());
 
         System.out.println("\nArray acomodado");
         ArrayUtils.imprimirArray(arrayQuickSort);

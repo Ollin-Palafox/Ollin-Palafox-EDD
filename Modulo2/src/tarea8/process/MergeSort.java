@@ -40,6 +40,8 @@ public class MergeSort {
                 j++;
             }
             k++;
+            Metrica.incrementComparacion();
+            Metrica.incrementMovimientos();
         }
 
         while (i < n1) {

@@ -37,12 +37,14 @@ public class HeapSort {
         if (derecha < n && arr[derecha] > arr[mayor]) {
             mayor = derecha;
         }
+        Metrica.incrementComparacion();
 
         // Si el mayor no es el nodo raíz
         if (mayor != i) {
             int temp = arr[i];
             arr[i] = arr[mayor];
             arr[mayor] = temp;
+            Metrica.incrementMovimientos();
 
             // Recursivamente hace heapify en el subárbol afectado
             heapify(arr, n, mayor);

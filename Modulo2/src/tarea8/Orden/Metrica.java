@@ -2,19 +2,19 @@ package tarea8.Orden;
 
 public class Metrica {
 
-    private int comparacion;
-    private int movimientos;
+    private static int comparacion;
+    private static int movimientos;
 
     public Metrica() {
         comparacion = 0;
         movimientos = 0;
     }
 
-    public void incrementComparacion() {
+    public static void incrementComparacion() {
         comparacion++;
     }
 
-    public void incrementMovimientos() {
+    public static void incrementMovimientos() {
         movimientos++;
     }
 
