@@ -1,9 +1,9 @@
-package tarea4.main;
+package tarea14;
 
-import tarea4.ui.CLI;
+import tarea14.ui.CLI;
 
 public class Main {
     public static void main(String[] args) {
-        CLI.launchApp();
+        CLI.Visual();
     }
 }
