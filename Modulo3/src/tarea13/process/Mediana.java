@@ -4,6 +4,17 @@ public class Mediana {
 
     public static double calcularMediana(int[] numeros) {
         quickSort(numeros, 0, numeros.length - 1);
+=======
+import java.util.Arrays;
+
+import java.util.Arrays;
+
+public class Mediana {
+
+    public static double calcularMediana(int[] numeros) {
+        quickSort(numeros, 0, numeros.length - 1);
+
+        Arrays.sort(numeros);
 
         int longitud = numeros.length;
 
@@ -46,3 +57,4 @@ public class Mediana {
     }
 }
 
+}
